@@ -1,0 +1,158 @@
+:root {
+    --black: #2E0249;
+    --amethyst: #570A57;
+    --purple: #A91079;
+    --pink: #F806CC;
+    --light-pink: #e9cdfa;
+    --white: #FDF8F5;
+}
+
+/* Element Selectors */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    background-color: var(--black);
+    color: var(--pink);
+    font-family: 'Poppins', sans-serif;;
+}
+
+h1,
+h2 {
+    margin: 20px;
+}
+
+main {
+    padding: 60px 0;
+}
+
+li {
+    display: inline;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+header,
+footer {
+    height: 60px;
+    width: 100%;
+    line-height: 60px;
+    background-color: var(--amethyst);
+}
+
+header {
+    position: fixed;
+}
+
+footer {
+    position: absolute;
+    margin-top: 0px;
+    bottom: 0;
+}
+
+figure {
+    margin-bottom: 40px;
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 0;
+    padding: 20px 10px 40px 10px;
+    background-color: var(--light-pink);
+}
+
+
+form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 10px;
+    border: 5px solid #2E0249;
+    border-radius: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input,
+textarea {
+    width: 300px;
+    border: 1px solid #4F4846;
+}
+
+textarea {
+    vertical-align: top;
+    height: 60px;
+}
+
+button {
+    height: 40px;
+    width: 120px;
+    background-color: #2E0249;
+    color: var(--white);
+    margin-top: 10px;
+    opacity: 0.8;
+    transition: translate 180ms, opacity 180ms;
+}
+
+
+/* Class Selectors */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+text-align: right;
+}
+
+
+/* Additional Designs */
+a:hover {
+    background-color: #2E0249;
+    border-radius: 8px;
+    padding: 10px 8px;
+    color: white;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+button:active {
+    translate: 2px 2px;
+}
+
+::selection {
+    background-color: #2E0249;
+    color: var(--white);
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--pink);
+}
+
+html {
+    scroll-behavior: smooth;
+}
